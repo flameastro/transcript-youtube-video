@@ -3,7 +3,7 @@ from playwright.sync_api import sync_playwright
 
 def get_transcription(URL):
     with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
+        browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto(URL)
 
@@ -13,12 +13,10 @@ def get_transcription(URL):
         page.click('xpath=//*[@id="expand"]')
         page.click('xpath=//*[@id="primary-button"]/ytd-button-renderer/yt-button-shape/button')
 
-        page.wait_for_selector('xpath=//*[@id="content"]')
-
-        page.wait_for_timeout(15000)   # Esperando 15 segundos para garantir que todo o texto seja carregado
+        page.wait_for_selector('xpath=//*[@id="body"]/ytd-transcript-segment-list-renderer')
 
         # Colentando todo o texto e inserindo em transcript.txt
-        transcription = page.query_selector('xpath=//*[@id="content"]').inner_text()
+        transcription = page.query_selector('xpath=//*[@id="body"]/ytd-transcript-segment-list-renderer').inner_text()
         with open("transcript.txt", "w", encoding="utf-8") as f:
             f.write(transcription)
 
