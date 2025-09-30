@@ -3,11 +3,11 @@ from playwright.sync_api import sync_playwright
 
 def get_transcription(URL):
     with sync_playwright() as p:
+        print(f"Coletando transcrição... Aguarde, por favor")
+
         browser = p.chromium.launch(headless=True)
         page = browser.new_page()
         page.goto(URL)
-
-        print(f"Coletando transcrição... Aguarde, por favor")
 
         # Entrando na transcrição
         page.click('xpath=//*[@id="expand"]')
