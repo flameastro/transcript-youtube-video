@@ -112,7 +112,11 @@ transcript-youtube-video/
 
 ## 📄 Exemplos de saída
 
-<img src="assets/output.png" alt="Um exemplo de transcrição de saída">
+> Um exemplo de saída com tempo
+<img src="assets/transcript-v1.png" alt="Um exemplo de transcrição de saída com tempo">
+
+> Um exemplo de saída sem tempo
+<img src="assets/transcript-v2.png" alt="Um exemplo de transcrição de saída sem tempo">
 
 ---
 
