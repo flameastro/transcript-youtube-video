@@ -10,9 +10,8 @@
 * [🧰 Pré-requisitos](#-pré-requisitos)
 * [🚀 Como utilizar](#-como-utilizar-)
 * [📂 Estrutura do Projeto](#-estrutura-do-projeto)
-* [📄 Exemplo de saída](#-exemplo-de-saída)
+* [📄 Exemplo de saída](#-exemplos-de-saída)
 * [⚠️ Aviso](#️-aviso-)
-* [🐛 Como relatar um problema](#-como-relatar-um-problema)
 
 ---
 
@@ -74,7 +73,15 @@ python main.py
 O programa pedirá um **link do vídeo do YouTube**:
 
 ```
-Insira a URL do vídeo do YouTube: https://www.youtube.com/watch?v=dQw4w9WgXcQ
+Insira a URL do vídeo do YouTube:
+>>> https://www.youtube.com/watch?v=FdePtO5JSd0
+```
+
+E também perguntará se você deseja adicionar tempo ou não no arquivo `transcript.txt`. O tempo sinaliza qual é a parte do vídeo que aquele determinado texto está. (Você pode entender isso melhor comparando um [arquivo que possui tempo](assets/transcript-v1.png) e outro [arquivo que não possui tempo](assets/transcript-v2.png))
+
+```
+Deseja coletar o tempo também? [s/n]:
+>>> s
 ```
 
 Após inserir, uma nova janela do navegador **Chromium** será aberta automaticamente.
@@ -90,25 +97,22 @@ Se tudo correr bem ✅, a transcrição será salva no arquivo `transcript.txt`.
 transcript-youtube-video/
 ├─ assets/
 │  ├─ code.png
-│  └─ output.png
+│  ├─ transcript-v1.png
+│  └─ transcript-v2.png
+├─ examples/
+│  ├─ transcript-v1.txt
+│  └─ transcript-v2.txt
+├─ LICENSE
 ├─ main.py
+├─ README.md
 └─ transcript.txt   # gerado automaticamente após a execução
 ```
 
 ---
 
-## 📄 Exemplo de saída
+## 📄 Exemplos de saída
 
 <img src="assets/output.png" alt="Um exemplo de transcrição de saída">
-
-Exemplo de como o terminal se comporta:
-
-```bash
-$ python main.py
-Insira a URL do vídeo do YouTube: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-
-✅ Transcrição salva com sucesso em transcript.txt
-```
 
 ---
 
@@ -123,15 +127,3 @@ Insira a URL do vídeo do YouTube: https://www.youtube.com/watch?v=dQw4w9WgXcQ
 Nesses casos, o arquivo `transcript.txt` pode ficar vazio.
 
 ---
-
-## 🐛 Como relatar um problema
-
-Se encontrar algum bug ou comportamento inesperado, você pode:
-
-1. Abrir uma **issue** neste repositório.
-2. Usar um **título descritivo** e explicar claramente o problema.
-3. Se possível, inclua **imagens, logs ou passos para reproduzir** o erro.
-
----
-
-💡 **Contribuições são bem-vindas!** Sinta-se livre para enviar *pull requests* e melhorar o projeto.
