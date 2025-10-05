@@ -1,0 +1,18 @@
+---------- Exemplo de vídeo sem tempo ----------
+
+Nessa aula de JavaScript que, começa agora, vamos falar muito sobre o processo de aprendizagem de uma linguagem, as dificuldades, as frustrações de quem está começando
+e nós vamos também dar os primeiros passos na linguagem JavaScript. Você não perde por esperar só que a exemplo do que aconteceu na anterior eu vou começar essa aula te fazendo
+algumas perguntas também, veja se você é capaz de responder a elas de maneira simples. Você sabe me dizer qual foi a empresa que criou a linguagem JavaScript?
+Você sabe me dizer se as linguagens Java e JavaScript são a mesma coisa, se parecem ter alguma relação entre elas? E de maneira similar
+a linguagem ECMAScript tem alguma relação com a linguagem JavaScript? E uma curiosidade: você sabia que vários programas são criados em JavaScript, inclusive aquele programa
+que você instala no seu computador para poder acessar o seu WhatsApp diretamente pelo Windows ou aquele chat do Discord, que eu sei que você usa? Você sabe citar outros exemplos de software
+que foi criado em JavaScript? Pois se por acaso a tua resposta para qualquer uma dessas perguntas for:
+"tá aí, eu não sei" é sinal de que você pulou uma etapa e não assistiu o vídeo anterior. Pois saiba que sempre vai estar disponível aqui em cima um link para playlist completa
+e esse curso só vai funcionar na sua cabeça de maneira completa. E se por acaso você conseguiu responder a todas essas perguntas sem problema nenhum,
+seja bem-vindo, seja bem-vinda, à sua Aula 03 do curso de JavaScript!
+Legenda: Tainá Bandeira
+Olá, pequeno Gafanhoto! Seja bem-vindo à terceira aula do seu Curso em Vídeo de JavaScript
+totalmente patrocinado pelo Google. O meu nome é Gustavo Guanabara, eu sou o seu professor e nas aulas anteriores, se você pulou, a gente viu um monte de coisas importantes,
+te mostrei quais são as semelhanças entre JavaScript e ECMAScript, o que é o JavaScript - que as pessoas falam - te mostrei que Java não é a mesma coisa que JavaScript.
+
+[...]
