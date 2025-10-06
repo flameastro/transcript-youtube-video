@@ -71,6 +71,7 @@ python main.py
 ```
 
 O programa pedirá um **link do vídeo do YouTube**:
+> ⚠️ Aviso: Neste exemplo, estou usando o link do curso do Gustavo Guanabara. Apenas para fins de testes.
 
 ```
 Insira a URL do vídeo do YouTube:
