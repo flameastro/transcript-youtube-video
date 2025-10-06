@@ -20,11 +20,11 @@ def get_transcription(URL: str, time: bool) -> None:
                 if time:
                     time = page.query_selector(f'xpath=//*[@id="segments-container"]/ytd-transcript-segment-renderer[{i}]/div/div/div').inner_text()
                     transcription = page.query_selector(f'xpath=//*[@id="segments-container"]/ytd-transcript-segment-renderer[{i}]/div/yt-formatted-string').inner_text()
-                    with open("transcript-v2.txt", "a", encoding="utf-8") as f:
+                    with open("transcript.txt", "a", encoding="utf-8") as f:
                         f.write(f"{time}: {transcription}\n")
                 else:
                     transcription = page.query_selector(f'xpath=//*[@id="segments-container"]/ytd-transcript-segment-renderer[{i}]/div/yt-formatted-string').inner_text()
-                    with open("transcript-v2.txt", "a", encoding="utf-8") as f:
+                    with open("transcript.txt", "a", encoding="utf-8") as f:
                         f.write(f"{transcription}\n")
                 i += 1
             except:
