@@ -3,7 +3,7 @@ from playwright.sync_api import sync_playwright
 
 def get_transcription(URL: str, time: bool) -> None:
     with sync_playwright() as p:
-        print(f"Coletando transcrição... Aguarde, por favor")
+        print(f"Getting transcription... Please be patient and wait!")
 
         browser = p.chromium.launch()
         page = browser.new_page()
@@ -30,17 +30,17 @@ def get_transcription(URL: str, time: bool) -> None:
             except:
                 break
 
-        print("Transcrição completa! Veja em transcript.txt!")
+        print("Transcription Complete! See it in the file transcript.txt!")
 
 
 if __name__ == "__main__":
     try:
-        URL = input("Insira a URL do vídeo do YouTube:\n>>> ")
-        time = input("Deseja coletar o tempo também? [s/n]:\n>>> ").lower()
+        URL = input("Paste the URL of the video here:\n>>> ")
+        time = input("Did you want time in the file? [y/n]:\n>>> ").lower()
         while time not in ["s", "n"]:
-            time = input("Certifique-se que inseriu \"s\" ou \"n\"!\nDeseja coletar o tempo também? [s/n]:\n>>> ").lower()
+            time = input("See if you type \"y\" or \"n\"!\nDid you want time in the file? [y/n]:\n>>> ").lower()
 
-        time = True if time == "s" else False
+        time = True if time == "y" else False
 
         get_transcription(URL, time)
     except Exception as e:
