@@ -37,11 +37,11 @@ if __name__ == "__main__":
     try:
         URL = input("Paste the URL of the video here:\n>>> ")
         time = input("Did you want time in the file? [y/n]:\n>>> ").lower()
-        while time not in ["s", "n"]:
+        while time not in ["y", "n"]:
             time = input("See if you type \"y\" or \"n\"!\nDid you want time in the file? [y/n]:\n>>> ").lower()
 
         time = True if time == "y" else False
 
         get_transcription(URL, time)
     except Exception as e:
-        print(f"Ocorreu um erro: {e}")
+        print(f"An error occurred: {e}")
