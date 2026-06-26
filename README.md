@@ -10,6 +10,16 @@
 
 ---
 
+## 📑 Table of Contents
+
+* [📜 What is it?]([#-what-is-it)
+* [🧰 Requirements]([#-requirements)
+* [🚀 How to Use]([#-how-to-use)
+* [📄 Output Examples]([#-output-examples)
+* [⚠️ Warning]([#%EF%B8%8F-warning)
+* [❓ Issues]([#-issues)
+
+
 ## 📜 What is it?
 
 **transcript-youtube-video** is a Python project designed to automatically collect the full transcript of a YouTube video.
